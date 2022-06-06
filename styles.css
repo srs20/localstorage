@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url(img.png) no-repeat center / cover fixed;
+}
+label{
+    color: #242121;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+table{
+    border-spacing: 1; 
+    border-collapse: collapse; 
+    background:white;
+    border-radius:6px;
+    overflow:hidden;
+    width:100%;
+    margin:0 auto;
+    text-align: center;
+}
+
+td,th{ 
+    padding-left:8px
+}
+thead tr{ 
+    height:60px;
+    width: 100px;
+    background:#FFED86;
+    font-size:16px;
+}
+  
+tbody tr{ 
+    height:48px; 
+    border-bottom:1px solid #E3F1D5 ;
+}
+
+.title{   
+    margin-bottom: 15px;
+    color: #094e5e; 
+    font-size: 35px; 
+    font-weight: bold;
+}
+.regForm{
+    background: #E8F0F2;
+    margin: 5% 30%;
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: 6px 6px 8px rgba(0,0,0,0.125);
+}
+
+.filterForm{
+    background: #E8F0F2;
+    margin: 5%;
+    margin-bottom: 2%;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 6px 6px 8px rgba(0,0,0,0.125); 
+}
+.container{
+    text-align: center;
+    background: #E8F0F2;
+    margin: 14% 30%;
+    padding: 10px 20px;
+    border-radius: 9px;
+    box-shadow: 6px 6px 8px rgba(0,0,0,0.125);
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.form-control.filter{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.form-control h2{
+    text-align: center;
+}
+.form-control input,
+.form-control select,
+.form-control textarea{
+    border: 2px solid #6eabcc;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+.form-control input:focus,
+.form-control select:focus,
+.form-control textarea:focus{
+    outline: none !important;
+    border: 2px solid #396279;
+}
+.form-control textarea{
+    height: 100px;
+    resize: none;
+}
+
+.btn{
+    margin-top: 20px;
+    border: 3px solid #0b677c !important;
+    background-color: #0b677c;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: white;
+    border: 2px solid #0b677c;
+    color: #053742;
+}
+
+.btn.green{
+    padding: 2px;
+    border: 3px solid green !important;
+    background-color: green;
+}
+
+.btn.green:hover{
+    background-color: white;
+    border: 2px solid green;
+    color: green;
+}
+
+.form-control .disp{
+    margin-top: 0;
+}
+
+.tick{
+    height: 50%;
+    width: 40%;
+}
+
+.back{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .regForm{
+        margin: 10px;
+    }
+    .container{
+        margin: 10px;
+    }
+    .form-control .gender{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1px;
+    }
+}
+
+

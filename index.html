@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="regForm">
+        <form id="emp">
+            <div class="form-control">
+                <h2 class="title">Employee Database Entry</h2>
+            </div>
+
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-control">
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" placeholder="Age">
+            </div>
+
+            <div class="form-control">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" placeholder="Phone">
+            </div>
+
+            <div class="form-control">
+                <label for="aadhar">Aadhar Number</label>
+                <input type="number" name="aadhar" id="aadhar" placeholder="Aadhar Number">
+            </div>
+
+            <div class="form-control">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" placeholder="Address" rows="3"></textarea>
+            </div>
+
+            <div class="form-control">
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date">
+            </div>
+
+            <div class="form-control">
+                <button class="btn" type="button" onclick="add()">Submit</button>
+            </div>
+            <div class="form-control">
+                <button type="button" onClick="disp()" class="btn disp green">Display</button>
+            </div>
+        </form>
+        
+    </div>
+
+</body>
+<script src="userScript.js"></script>
+</html>
